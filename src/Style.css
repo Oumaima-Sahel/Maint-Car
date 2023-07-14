@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script&family=Great+Vibes&family=Lobster&family=Nunito:ital,wght@0,300;0,500;1,300;1,400;1,500;1,900&family=Pacifico&display=swap');
+
+/* conexion */
+#titre{
+    text-align: center;
+    font-family: 'Creepster', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Pacifico', cursive;
+    padding-top: 50px;
+    margin-left: -3%;
+}
+#body{
+    margin-left: 300px;
+    padding: 50px;
+    padding-left: 50px;
+    width: 50%;
+    overflow: hidden;
+    font: inknut Antiqua;
+}
+.center{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translate(-50% -50%);
+    width: 100px;
+    background: white;
+    border-radius: 10px;
+}
+#conix {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+#conix .nav{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #2691d9;
+    text-decoration: none;
+    font-weight: bold;
+}
+#conix .nav:hover{
+    color: #adadad;
+    transition: .3s;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt-field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt-field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt-field span::before{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before{
+    width: 100%;
+}
+.submit{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+.submit:hover{
+    border-color: #115380;
+    transition: .5s;
+}
+.login_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+.login_link a{
+    color: #2691d9;
+    text-decoration: none;
+}
+.login_link a:hover{
+    text-decoration: underline;
+}
+
+/* Navbar */
+#logo{
+    width: 9.5rem;
+}
+#link{
+    color: #2691d9;
+    padding: 60px 80px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#link:hover{
+    color: #666666;
+    transition: .3s;
+}
+#logout{
+    width: 100px;
+    height: 40px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #e9f4fb;
+    cursor: pointer;
+    outline: none;
+    transition: .4s;
+}
+#logout:hover{
+    border-color: #115380;
+    transition: .5s;
+    
+}
+.active{
+    color: #e9f4fb;
+}
+.active:hover{
+    color: #666666;
+}
+
+
+/* createvehicul */
+#createvehicul{
+    max-width: 90%;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 30px;
+}
+#image{
+    width: 10rem;
+}
+.container .input-data{
+    position: relative;
+    margin: 12px 0;
+}
+.container .input-text{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #2691d9;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.container .input-text:focus + label,
+.container .input-text.not-empty + label{
+    transform: translateY(-24px);
+}
+.container .input-text:focus{
+    outline: none;
+}
+.container label{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #2691d9;
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
+}
+.submit-btn{
+    display: inline-block;
+    background: #115380;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+
+
